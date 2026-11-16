@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen Anual - ROJAS PEREZ NATALY DEL PILAR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: transparent; 
+            padding: 0;
+            margin: 0;
+            min-height: 100vh;
+        }
+        .wrapper {
+            width: 100%;
+            height: auto; 
+            min-height: 100vh;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+        .bg-dark-card { background-color: #17202A; }
+        .bg-dark-panel { background-color: #1E293B; }
+        
+        .text-green-excel { color: #22C55E; }
+        .bg-green-excel { background-color: rgba(34, 197, 94, 0.15); border: 1px solid #22C55E; color: #22C55E; }
+        
+        .text-yellow-excel { color: #EAB308; }
+        .bg-yellow-excel { background-color: rgba(234, 179, 8, 0.15); border: 1px solid #EAB308; color: #EAB308; }
+        
+        .text-orange-excel { color: #F97316; }
+        .bg-orange-excel { background-color: rgba(249, 115, 22, 0.15); border: 1px solid #F97316; color: #F97316; }
+
+        * {
+            min-width: 0;
+        }
+
+        @media (max-width: 640px) {
+            .table-mobile-responsive th, .table-mobile-responsive td {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+            .table-mobile-responsive th:last-child, .table-mobile-responsive td:last-child {
+                display: none;
+            }
+            .table-mobile-responsive th:nth-child(2), .table-mobile-responsive td:nth-child(2) {
+                text-align: right;
+            }
+            
+            /* FIXED MOBILE CARD STRUCTURE FOR PANOEE */
+            .mobile-card {
+                display: flex;
+                flex-direction: column;
+            }
+            .mobile-card-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 0.5rem;
+                width: 100%;
+            }
+            .mobile-card-title {
+                font-weight: 600;
+                color: white;
+                font-size: 0.875rem; /* text-sm */
+                margin-right: 0.5rem; /* space before badge */
+                word-wrap: break-word; /* ensure it breaks if really long */
+            }
+            .mobile-card-badge {
+                flex-shrink: 0; /* NEVER SHRINK */
+            }
+            .mobile-card-months {
+                font-size: 10px;
+                display: block;
+                margin-top: 2px;
+                word-wrap: break-word;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="bg-dark-card w-full max-w-4xl rounded-xl sm:rounded-3xl p-4 sm:p-8 text-white shadow-2xl relative mb-10">
+            
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 sm:mb-8 pb-4 sm:pb-6 border-b border-gray-700">
+                <div class="mb-4 sm:mb-0 w-full sm:w-auto">
+                    <div class="bg-red-600 inline-block text-white font-bold text-[10px] sm:text-xs px-3 py-1 rounded-full mb-2 uppercase tracking-wide shadow-lg">
+                        Vendido (Activo)
+                    </div>
+                    <h2 class="text-xl sm:text-3xl font-extrabold tracking-tight">El Poblado - Mz G - Lote 5</h2>
+                    <p class="text-gray-400 mt-1 font-medium text-sm sm:text-lg">Cliente: <span class="text-white block sm:inline">ROJAS PEREZ NATALY DEL PILAR</span></p>
+                </div>
+                <div class="text-left sm:text-right w-full sm:w-auto border-t sm:border-t-0 border-gray-700 pt-3 sm:pt-0">
+                    <p class="text-gray-400 text-xs sm:text-sm">Teléfono</p>
+                    <p class="text-base sm:text-lg font-semibold">970 993 536</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
+                <div class="bg-dark-panel rounded-xl sm:rounded-2xl p-4 sm:p-5 border border-gray-700">
+                    <h3 class="text-gray-400 text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-3 border-b border-gray-600 pb-2">Datos del Lote</h3>
+                    <div class="space-y-2 text-xs sm:text-sm">
+                        <div class="flex justify-between"><span class="text-gray-400">Área:</span> <span class="font-semibold">90.00 m²</span></div>
+                        <div class="flex justify-between"><span class="text-gray-400">Fecha Contrato:</span> <span class="font-semibold">25/08/2025</span></div>
+                        <div class="flex justify-between"><span class="text-gray-400">Asesor:</span> <span class="font-semibold text-white">KATY QUESADA</span></div>
+                    </div>
+                </div>
+
+                <div class="bg-dark-panel rounded-xl sm:rounded-2xl p-4 sm:p-5 border border-gray-700">
+                    <h3 class="text-gray-400 text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-3 border-b border-gray-600 pb-2">Plan de Financiamiento</h3>
+                    <div class="space-y-2 text-xs sm:text-sm">
+                        <div class="flex justify-between"><span class="text-gray-400">Precio Total:</span> <span class="font-bold">S/ 46,000.00</span></div>
+                        <div class="flex justify-between"><span class="text-gray-400">Inicial Pagada:</span> <span class="font-semibold">S/ 3,000.00</span></div>
+                        <div class="flex justify-between"><span class="text-gray-400">Saldo a Pagar:</span> <span class="font-bold text-white">S/ 43,000.00</span></div>
+                        <div class="flex justify-between"><span class="text-gray-400">Total Cuotas:</span> <span class="font-semibold">48 meses</span></div>
+                    </div>
+                </div>
+
+                <div class="bg-dark-panel rounded-xl sm:rounded-2xl p-4 sm:p-5 border border-gray-500 flex flex-col justify-center items-center text-center">
+                    <p class="text-gray-400 text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-1">Cuota Mensual</p>
+                    <h3 class="text-white text-3xl sm:text-4xl font-extrabold mb-1">S/ 500.00</h3>
+                    <p class="text-[10px] sm:text-sm text-gray-300">Día de pago: <span class="font-bold text-white">30 de cada mes</span></p>
+                    <p class="text-[9px] sm:text-xs text-gray-400 mt-1">Inicio: 30/10/2025</p>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-base sm:text-lg font-bold text-white mb-4 flex items-center">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-[#F97316]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                    </svg>
+                    Resumen de Pagos y Saldo
+                </h3>
+                
+                <div class="space-y-3 sm:hidden pb-4">
+                    
+                <div class="bg-dark-panel p-4 rounded-xl border border-gray-700 relative mobile-card">
+                    <div class="mobile-card-header">
+                        <span class="mobile-card-title">Pagado en 2025</span>
+                        <span class="bg-green-excel text-[9px] font-bold px-2 py-1 rounded uppercase mobile-card-badge">PAGADO</span>
+                    </div>
+                    <span class="text-green-excel mobile-card-months">Oct, Nov, Dic</span>
+                    <div class="flex justify-between items-end border-t border-gray-700 pt-2 mt-2 w-full">
+                        <span class="text-xs text-gray-400">3 meses</span>
+                        <span class="font-bold text-white text-base">S/ 1,500.00</span>
+                    </div>
+                </div>
+        
+                    
+                <div class="bg-dark-panel p-4 rounded-xl border border-gray-700 relative mobile-card">
+                    <div class="mobile-card-header">
+                        <span class="mobile-card-title">Pagado en 2026</span>
+                        <span class="bg-green-excel text-[9px] font-bold px-2 py-1 rounded uppercase mobile-card-badge">PAGADO</span>
+                    </div>
+                    <span class="text-green-excel mobile-card-months">Ene a Set</span>
+                    <div class="flex justify-between items-end border-t border-gray-700 pt-2 mt-2 w-full">
+                        <span class="text-xs text-gray-400">9 meses</span>
+                        <span class="font-bold text-white text-base">S/ 4,500.00</span>
+                    </div>
+                </div>
+        
+                    
+
+                    <!-- Tarjetas Faltantes -->
+                    <div class="bg-dark-panel p-4 rounded-xl border border-gray-700 relative mobile-card" style="display: flex">
+                        <div class="mobile-card-header">
+                            <span class="mobile-card-title">Falta en 2026</span>
+                            <span class="bg-yellow-excel text-[9px] font-bold px-2 py-1 rounded uppercase mobile-card-badge">PENDIENTE</span>
+                        </div>
+                        <span class="text-yellow-excel mobile-card-months">Oct, Nov, Dic</span>
+                        
+                        <div class="flex justify-between items-end border-t border-gray-700 pt-2 mt-2 w-full">
+                            <span class="text-xs text-gray-400">3 meses</span>
+                            <span class="font-bold text-white text-base">S/ 1,500.00</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark-panel p-4 rounded-xl border border-gray-700 relative mobile-card" style="display: flex">
+                        <div class="mobile-card-header">
+                            <span class="mobile-card-title">Falta en 2027</span>
+                            <span class="bg-yellow-excel text-[9px] font-bold px-2 py-1 rounded uppercase mobile-card-badge">PENDIENTE</span>
+                        </div>
+                        <span class="text-yellow-excel mobile-card-months">Enero a Diciembre</span>
+                        
+                        <div class="flex justify-between items-end border-t border-gray-700 pt-2 mt-2 w-full">
+                            <span class="text-xs text-gray-400">12 meses</span>
+                            <span class="font-bold text-white text-base">S/ 6,000.00</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark-panel p-4 rounded-xl border border-gray-700 relative mobile-card" style="display: flex">
+                        <div class="mobile-card-header">
+                            <span class="mobile-card-title">Falta en 2028</span>
+                            <span class="bg-yellow-excel text-[9px] font-bold px-2 py-1 rounded uppercase mobile-card-badge">PENDIENTE</span>
+                        </div>
+                        <span class="text-yellow-excel mobile-card-months">Enero a Diciembre</span>
+                        
+                        <div class="flex justify-between items-end border-t border-gray-700 pt-2 mt-2 w-full">
+                            <span class="text-xs text-gray-400">12 meses</span>
+                            <span class="font-bold text-white text-base">S/ 6,000.00</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark-panel p-4 rounded-xl border border-gray-700 relative mobile-card" style="display: flex">
+                        <div class="mobile-card-header">
+                            <span class="mobile-card-title">Falta en 2029 (o posterior)</span>
+                            <span class="bg-yellow-excel text-[9px] font-bold px-2 py-1 rounded uppercase mobile-card-badge">PENDIENTE</span>
+                        </div>
+                        <span class="text-yellow-excel mobile-card-months">Ene a Set</span>
+                        
+                        <div class="flex justify-between items-end border-t border-gray-700 pt-2 mt-2 w-full">
+                            <span class="text-xs text-gray-400">9 meses</span>
+                            <span class="font-bold text-white text-base">S/ 4,500.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta Total -->
+                    <div class="bg-gray-800 p-4 rounded-xl border border-gray-600 relative mt-4 mobile-card">
+                        <div class="mobile-card-header">
+                            <span class="mobile-card-title text-base font-bold">Saldo Final Restante</span>
+                            <span class="bg-transparent border border-gray-400 text-gray-300 text-[9px] font-bold px-2 py-1 rounded uppercase mobile-card-badge" style="border-width: 1px;">TOTAL</span>
+                        </div>
+                        <span class="text-gray-400 mobile-card-months">Total vencido + pendiente</span>
+                        
+                        <div class="flex justify-between items-end border-t border-gray-600 pt-3 mt-2 w-full">
+                            <span class="text-sm font-bold text-white">36 / 48</span>
+                            <span class="font-extrabold text-white text-xl">S/ 18,000.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabla PC -->
+                <div class="hidden sm:block overflow-x-auto">
+                    <table class="w-full text-left text-sm table-mobile-responsive">
+                        <thead class="text-xs text-gray-400 uppercase bg-gray-800 rounded-t-lg">
+                            <tr>
+                                <th class="px-4 py-3 rounded-tl-lg">Periodo / Concepto</th>
+                                <th class="px-4 py-3 text-center">Cant. Meses</th>
+                                <th class="px-4 py-3 text-right">Monto Total</th>
+                                <th class="px-4 py-3 text-center rounded-tr-lg">Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-700 bg-dark-panel">
+                            
+                            
+                        <tr class="hover:bg-gray-800 transition-colors">
+                            <td class="px-4 py-4 font-semibold text-white">
+                                <span class="block text-lg">Pagado en 2025</span>
+                                <span class="text-xs text-green-excel font-normal">Oct, Nov, Dic</span>
+                            </td>
+                            <td class="px-4 py-4 text-center text-lg text-white font-bold">3</td>
+                            <td class="px-4 py-4 text-right font-bold text-white text-lg">S/ 1,500.00</td>
+                            <td class="px-4 py-4 text-center">
+                                <span class="bg-green-excel text-xs font-bold px-3 py-1.5 rounded uppercase">PAGADO</span>
+                            </td>
+                        </tr>
+        
+                            
+                        <tr class="hover:bg-gray-800 transition-colors">
+                            <td class="px-4 py-4 font-semibold text-white">
+                                <span class="block text-lg">Pagado en 2026</span>
+                                <span class="text-xs text-green-excel font-normal">Ene a Set</span>
+                            </td>
+                            <td class="px-4 py-4 text-center text-lg text-white font-bold">9</td>
+                            <td class="px-4 py-4 text-right font-bold text-white text-lg">S/ 4,500.00</td>
+                            <td class="px-4 py-4 text-center">
+                                <span class="bg-green-excel text-xs font-bold px-3 py-1.5 rounded uppercase">PAGADO</span>
+                            </td>
+                        </tr>
+        
+                            
+
+                            <tr class="hover:bg-gray-800 transition-colors opacity-90" style="display: table-row">
+                                <td class="px-4 py-4 font-semibold text-white">
+                                    <span class="block text-lg">Falta Pagar en 2026</span>
+                                    <span class="text-xs text-yellow-excel font-normal">Oct, Nov, Dic</span>
+                                </td>
+                                <td class="px-4 py-4 text-center text-lg text-white font-semibold">3</td>
+                                <td class="px-4 py-4 text-right font-bold text-white text-lg">S/ 1,500.00</td>
+                                <td class="px-4 py-4 text-center">
+                                    <span class="bg-yellow-excel text-xs font-bold px-3 py-1.5 rounded uppercase">PENDIENTE</span>
+                                </td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-800 transition-colors opacity-90" style="display: table-row">
+                                <td class="px-4 py-4 font-semibold text-white">
+                                    <span class="block text-lg">Falta Pagar en 2027</span>
+                                    <span class="text-xs text-yellow-excel font-normal">Enero a Diciembre</span>
+                                </td>
+                                <td class="px-4 py-4 text-center text-lg text-white font-semibold">12</td>
+                                <td class="px-4 py-4 text-right font-bold text-white text-lg">S/ 6,000.00</td>
+                                <td class="px-4 py-4 text-center">
+                                    <span class="bg-yellow-excel text-xs font-bold px-3 py-1.5 rounded uppercase">PENDIENTE</span>
+                                </td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-800 transition-colors opacity-90" style="display: table-row">
+                                <td class="px-4 py-4 font-semibold text-white">
+                                    <span class="block text-lg">Falta Pagar en 2028</span>
+                                    <span class="text-xs text-yellow-excel font-normal">Enero a Diciembre</span>
+                                </td>
+                                <td class="px-4 py-4 text-center text-lg text-white font-semibold">12</td>
+                                <td class="px-4 py-4 text-right font-bold text-white text-lg">S/ 6,000.00</td>
+                                <td class="px-4 py-4 text-center">
+                                    <span class="bg-yellow-excel text-xs font-bold px-3 py-1.5 rounded uppercase">PENDIENTE</span>
+                                </td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-800 transition-colors opacity-90" style="display: table-row">
+                                <td class="px-4 py-4 font-semibold text-white">
+                                    <span class="block text-lg">Falta Pagar en 2029 (o posterior)</span>
+                                    <span class="text-xs text-yellow-excel font-normal">Ene a Set</span>
+                                </td>
+                                <td class="px-4 py-4 text-center text-lg text-white font-semibold">9</td>
+                                <td class="px-4 py-4 text-right font-bold text-white text-lg">S/ 4,500.00</td>
+                                <td class="px-4 py-4 text-center">
+                                    <span class="bg-yellow-excel text-xs font-bold px-3 py-1.5 rounded uppercase">PENDIENTE</span>
+                                </td>
+                            </tr>
+
+                            <tr class="bg-gray-800 border-t-4 border-gray-600">
+                                <td class="px-4 py-5 font-bold text-white">
+                                    <span class="block text-xl">Saldo Final Restante</span>
+                                </td>
+                                <td class="px-4 py-5 text-center font-extrabold text-xl text-white">36 / 48</td>
+                                <td class="px-4 py-5 text-right font-extrabold text-white text-2xl">S/ 18,000.00</td>
+                                <td class="px-4 py-5 text-center">
+                                    <span class="bg-transparent border border-white text-white text-xs font-bold px-3 py-1.5 rounded uppercase">Total Pendiente</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
