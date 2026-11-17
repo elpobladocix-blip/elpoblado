@@ -140,20 +140,32 @@
                 
                 <div class="space-y-3 sm:hidden pb-4">
                     
-                    
-                    
-            <div class="bg-orange-900/20 p-4 rounded-xl border border-orange-700 relative shadow-[0_0_15px_rgba(249,115,22,0.3)] mobile-card">
-                <div class="mobile-card-header">
-                    <span class="mobile-card-title text-orange-500">Cuotas Atrasadas</span>
-                    <span class="bg-orange-excel text-[9px] font-bold px-2 py-1 rounded uppercase mobile-card-badge">VENCIDO</span>
+                <div class="bg-dark-panel p-4 rounded-xl border border-gray-700 relative mobile-card">
+                    <div class="mobile-card-header">
+                        <span class="mobile-card-title">Pagado en 2025</span>
+                        <span class="bg-green-excel text-[9px] font-bold px-2 py-1 rounded uppercase mobile-card-badge">PAGADO</span>
+                    </div>
+                    <span class="text-green-excel mobile-card-months">Octubre, Noviembre, Diciembre</span>
+                    <div class="flex justify-between items-end border-t border-gray-700 pt-2 mt-2 w-full">
+                        <span class="text-xs text-gray-400">3 meses</span>
+                        <span class="font-bold text-white text-base">S/ 3,603.00</span>
+                    </div>
                 </div>
-                <span class="text-orange-400 mobile-card-months">Oct 2025 a Oct 2026</span>
-                <div class="flex justify-between items-end border-t border-orange-800 pt-2 mt-2 w-full">
-                    <span class="text-xs text-orange-300">13 meses</span>
-                    <span class="font-bold text-orange-500 text-base">S/ 15,613.00</span>
+        
+                    
+                <div class="bg-dark-panel p-4 rounded-xl border border-gray-700 relative mobile-card">
+                    <div class="mobile-card-header">
+                        <span class="mobile-card-title">Pagado en 2026</span>
+                        <span class="bg-green-excel text-[9px] font-bold px-2 py-1 rounded uppercase mobile-card-badge">PAGADO</span>
+                    </div>
+                    <span class="text-green-excel mobile-card-months">Enero a Septiembre</span>
+                    <div class="flex justify-between items-end border-t border-gray-700 pt-2 mt-2 w-full">
+                        <span class="text-xs text-gray-400">9 meses</span>
+                        <span class="font-bold text-white text-base">S/ 10,809.00</span>
+                    </div>
                 </div>
-            </div>
-    
+        
+                    
 
                     <!-- Tarjetas Faltantes -->
                     <div class="bg-dark-panel p-4 rounded-xl border border-gray-700 relative mobile-card" style="display: flex">
@@ -161,11 +173,11 @@
                             <span class="mobile-card-title">Falta en 2026</span>
                             <span class="bg-yellow-excel text-[9px] font-bold px-2 py-1 rounded uppercase mobile-card-badge">PENDIENTE</span>
                         </div>
-                        <span class="text-yellow-excel mobile-card-months">Nov, Dic</span>
+                        <span class="text-yellow-excel mobile-card-months">Octubre, Noviembre, Diciembre</span>
                         
                         <div class="flex justify-between items-end border-t border-gray-700 pt-2 mt-2 w-full">
-                            <span class="text-xs text-gray-400">2 meses</span>
-                            <span class="font-bold text-white text-base">S/ 2,402.00</span>
+                            <span class="text-xs text-gray-400">3 meses</span>
+                            <span class="font-bold text-white text-base">S/ 3,603.00</span>
                         </div>
                     </div>
 
@@ -200,7 +212,7 @@
                             <span class="mobile-card-title">Falta en 2029 (o posterior)</span>
                             <span class="bg-yellow-excel text-[9px] font-bold px-2 py-1 rounded uppercase mobile-card-badge">PENDIENTE</span>
                         </div>
-                        <span class="text-yellow-excel mobile-card-months">Ene a Set</span>
+                        <span class="text-yellow-excel mobile-card-months">Enero a Septiembre</span>
                         
                         <div class="flex justify-between items-end border-t border-gray-700 pt-2 mt-2 w-full">
                             <span class="text-xs text-gray-400">9 meses</span>
@@ -217,8 +229,8 @@
                         <span class="text-gray-400 mobile-card-months">Total vencido + pendiente</span>
                         
                         <div class="flex justify-between items-end border-t border-gray-600 pt-3 mt-2 w-full">
-                            <span class="text-sm font-bold text-white">48 / 48</span>
-                            <span class="font-extrabold text-white text-xl">S/ 57,648.00</span>
+                            <span class="text-sm font-bold text-white">36 / 48</span>
+                            <span class="font-extrabold text-white text-xl">S/ 43,236.00</span>
                         </div>
                     </div>
                 </div>
@@ -237,28 +249,40 @@
                         <tbody class="divide-y divide-gray-700 bg-dark-panel">
                             
                             
+                        <tr class="hover:bg-gray-800 transition-colors">
+                            <td class="px-4 py-4 font-semibold text-white">
+                                <span class="block text-lg">Pagado en 2025</span>
+                                <span class="text-xs text-green-excel font-normal">Octubre, Noviembre, Diciembre</span>
+                            </td>
+                            <td class="px-4 py-4 text-center text-lg text-white font-bold">3</td>
+                            <td class="px-4 py-4 text-right font-bold text-white text-lg">S/ 3,603.00</td>
+                            <td class="px-4 py-4 text-center">
+                                <span class="bg-green-excel text-xs font-bold px-3 py-1.5 rounded uppercase">PAGADO</span>
+                            </td>
+                        </tr>
+        
                             
+                        <tr class="hover:bg-gray-800 transition-colors">
+                            <td class="px-4 py-4 font-semibold text-white">
+                                <span class="block text-lg">Pagado en 2026</span>
+                                <span class="text-xs text-green-excel font-normal">Enero a Septiembre</span>
+                            </td>
+                            <td class="px-4 py-4 text-center text-lg text-white font-bold">9</td>
+                            <td class="px-4 py-4 text-right font-bold text-white text-lg">S/ 10,809.00</td>
+                            <td class="px-4 py-4 text-center">
+                                <span class="bg-green-excel text-xs font-bold px-3 py-1.5 rounded uppercase">PAGADO</span>
+                            </td>
+                        </tr>
+        
                             
-                    <tr class="hover:bg-gray-800 transition-colors bg-orange-900/10">
-                        <td class="px-4 py-4 font-semibold text-orange-500">
-                            <span class="block text-lg">Cuotas Atrasadas</span>
-                            <span class="text-xs text-orange-400 font-normal">Oct 2025 a Oct 2026</span>
-                        </td>
-                        <td class="px-4 py-4 text-center text-lg text-orange-500 font-bold">13</td>
-                        <td class="px-4 py-4 text-right font-bold text-orange-500 text-lg">S/ 15,613.00</td>
-                        <td class="px-4 py-4 text-center">
-                            <span class="bg-orange-excel text-xs font-bold px-3 py-1.5 rounded uppercase">VENCIDO</span>
-                        </td>
-                    </tr>
-    
 
                             <tr class="hover:bg-gray-800 transition-colors opacity-90" style="display: table-row">
                                 <td class="px-4 py-4 font-semibold text-white">
                                     <span class="block text-lg">Falta Pagar en 2026</span>
-                                    <span class="text-xs text-yellow-excel font-normal">Nov, Dic</span>
+                                    <span class="text-xs text-yellow-excel font-normal">Octubre, Noviembre, Diciembre</span>
                                 </td>
-                                <td class="px-4 py-4 text-center text-lg text-white font-semibold">2</td>
-                                <td class="px-4 py-4 text-right font-bold text-white text-lg">S/ 2,402.00</td>
+                                <td class="px-4 py-4 text-center text-lg text-white font-semibold">3</td>
+                                <td class="px-4 py-4 text-right font-bold text-white text-lg">S/ 3,603.00</td>
                                 <td class="px-4 py-4 text-center">
                                     <span class="bg-yellow-excel text-xs font-bold px-3 py-1.5 rounded uppercase">PENDIENTE</span>
                                 </td>
@@ -291,7 +315,7 @@
                             <tr class="hover:bg-gray-800 transition-colors opacity-90" style="display: table-row">
                                 <td class="px-4 py-4 font-semibold text-white">
                                     <span class="block text-lg">Falta Pagar en 2029 (o posterior)</span>
-                                    <span class="text-xs text-yellow-excel font-normal">Ene a Set</span>
+                                    <span class="text-xs text-yellow-excel font-normal">Enero a Septiembre</span>
                                 </td>
                                 <td class="px-4 py-4 text-center text-lg text-white font-semibold">9</td>
                                 <td class="px-4 py-4 text-right font-bold text-white text-lg">S/ 10,809.00</td>
@@ -304,8 +328,8 @@
                                 <td class="px-4 py-5 font-bold text-white">
                                     <span class="block text-xl">Saldo Final Restante</span>
                                 </td>
-                                <td class="px-4 py-5 text-center font-extrabold text-xl text-white">48 / 48</td>
-                                <td class="px-4 py-5 text-right font-extrabold text-white text-2xl">S/ 57,648.00</td>
+                                <td class="px-4 py-5 text-center font-extrabold text-xl text-white">36 / 48</td>
+                                <td class="px-4 py-5 text-right font-extrabold text-white text-2xl">S/ 43,236.00</td>
                                 <td class="px-4 py-5 text-center">
                                     <span class="bg-transparent border border-white text-white text-xs font-bold px-3 py-1.5 rounded uppercase">Total Pendiente</span>
                                 </td>
